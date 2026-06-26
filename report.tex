@@ -1,0 +1,93 @@
+\documentclass[a4paper]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=left,
+	numbersep=5pt,
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	tabsize=4,
+}
+\lstset{style=mystyle}
+
+\usepackage{xepersian}
+
+\settextfont{XB Niloofar}
+
+\title{\textbf{گزارش پروژۀ سوم - درس نرم افزار ریاضی}}
+\author{\textbf{پیشوا آزیز - \lr{40313003}}}
+\date{}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section*{سوال ۱}
+	در این بخش، نقاط داده‌شده $ (0,1), (1,3), (2,2), (3,5), (4,4), (5,6) $ با استفاده از دو روش لاگرانژ و اسپلاین مکعبی درونیابی شده‌اند.
+	
+
+	ضابطۀ به دست آمده برای چندجمله‌ای لاگرانژ به شرح زیر است:
+	\[ P(x) = 0.25x^5 - 3.125x^4 + 13.67x^3 - 24.38x^2 + 15.58x + 1 \]
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=0.7\textwidth]{problem-1/Figure_1.png}
+		\caption{مقایسۀ درونیابی لاگرانژ و اسپلاین مکعبی}
+	\end{figure}
+	
+	\newpage
+	
+	\section*{سوال ۲}
+	در این مرحله، فایل \lr{data.xlsx} فراخوانی شده و نمودارهای مربوط به زمان اجرای الگوریتم‌ها رسم گردید.
+
+	دادۀ مربوط به \lr{700KB} به صورت پویا به دیتافریم اضافه شد. نمودارهای خطی (مقیاس معمولی و لگاریتمی) و نمودار میله‌ای برای مجموع زمان اجرا در شکل زیر نمایش داده شده است.
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=1\textwidth]{problem-2/Figure_1.png}
+		\caption{تحلیل زمان اجرای الگوریتم‌های ۱، ۲ و ۳}
+	\end{figure}
+	
+	بر اساس محاسبات انجام‌شده روی داده‌های ۱۰۰ تا ۶۰۰ کیلوبایت، میانگین زمان اجرای الگوریتم ۲ برابر است با:
+	\textbf{\lr{250.00}}
+	
+	\section*{سوال ۳}
+	تابع $ f(x) = e^{x^2} $ در بازه $[0, 1]$ در نظر گرفته شده است.
+	
+	نتایج حاصل از اجرای کد پایتون:
+	\begin{itemize}
+		\item روش ذوزنقه‌ای: $ 1.462697 $
+		\item روش سیمپسون: $ 1.462652 $
+	\end{itemize}
+	
+	با استفاده از روش گوسی ۵ نقطه‌ای، مقدار انتگرال برابر با \textbf{1.462652} به دست آمد که دقت بسیار بالایی (مشابه سیمپسون) نشان می‌دهد.
+	
+	\section*{لینک ریپازیتوری گیت‌هاب}
+	تمامی کدهای پروژه و فایل‌های مربوطه در مخزن زیر در دسترس است:\\
+	\lr{https://github.com/PeshawaAziz/ms-project}
+	
+\end{document}
